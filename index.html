@@ -1,0 +1,201 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+    <script src="demo.js"></script>
+  </head>
+  <body onmousemove="moveCursor(event)">
+    <div class="flex flex-col items-center">
+      <img
+        src="images/cursor.gif"
+        alt=""
+        class="w-24 fixed transition-all duration-300"
+        id="cursor"
+      />
+      <div class="container flex items-center h-18 gap-8 overflow-visible">
+        <img src="images/logo.png" alt="" class="animation mr-auto" />
+        <div class="hidden sm:flex gap-8" id="desktopMenu">
+          <div>About</div>
+          <div>Services</div>
+          <div>Blog</div>
+          <div>Jobs</div>
+          <div>Contact</div>
+        </div>
+        <img
+          src="images/ico_hamburger.webp"
+          alt=""
+          class="size-6 sm:hidden"
+          onclick="toggleMobileMenu()"
+        />
+        <div
+          class="fixed w-full h-full hidden justify-end right-0 top-0 z-10 bg-[#00000080]"
+          id="mobileMenu"
+        >
+          <div class="w-52 h-full flex items-end flex-col p-10 gap-2 bg-white">
+            <img
+              src="images/ico_hamburger.webp"
+              alt=""
+              class="size-6 mb-4 -mr-4 -mt-4"
+              onclick="toggleMobileMenu()"
+            />
+            <div>About</div>
+            <div>Services</div>
+            <div>Blog</div>
+            <div>Jobs</div>
+            <div>Contact</div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container flex flex-col-reverse sm:flex-row items-center gap-7"
+      >
+        <div class="grid sm:grid-cols-6 gap-5">
+          <img src="./images/cover_1.png" alt="" class="sm:col-span-3 w-full" />
+          <img
+            src="./images/cover_2.png"
+            alt=""
+            class="sm:col-span-3 w-full self-end animation"
+          />
+          <img src="./images/cover_3.png" alt="" class="sm:col-span-2 w-full" />
+          <img src="./images/cover_4.png" alt="" class="sm:col-span-4 w-full" />
+        </div>
+        <div class="flex flex-col px-12 py-16">
+          <div class="text-h3 font-bold mb-4 font-roboto">Headline</div>
+          <div class="mb-10">
+            Specially developed to help restore a more youthful appearance with
+            improved radiance and bounce.
+          </div>
+          <div class="flex items-center gap-4 mb-6">
+            <img src="./images/ico_1.png" alt="" />
+            <div class="flex flex-col gap-1">
+              <div class="text-h6">Headline</div>
+              <div>One line description</div>
+            </div>
+          </div>
+          <div class="flex items-center gap-4 mb-10">
+            <img src="./images/ico_1.png" alt="" />
+            <div class="flex flex-col gap-1">
+              <div class="text-h6">Headline</div>
+              <div>One line description</div>
+            </div>
+          </div>
+          <div
+            class="animate__animated animate__jello flex justify-center items-center rounded-lg w-24 h-10 text-white bg-purple-500"
+          >
+            Buy now
+          </div>
+        </div>
+      </div>
+      <div class="bg-black w-full text-white py-16 flex justify-center">
+        <div class="container grid sm:grid-cols-2 md:grid-cols-4 gap-7">
+          <div class="flex flex-col gap-3">
+            <div class="text-lead2 font-bold mb-1">Product</div>
+            <div>Overview</div>
+            <div>Features</div>
+            <div>Tutorials</div>
+            <div>Pricing</div>
+            <div>Releases</div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <div class="text-lead2 font-bold mb-1">Product</div>
+            <div>Overview</div>
+            <div>Features</div>
+            <div>Tutorials</div>
+            <div>Pricing</div>
+            <div>Releases</div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <div class="text-lead2 font-bold mb-1">Product</div>
+            <div>Overview</div>
+            <div>Features</div>
+            <div>Tutorials</div>
+            <div>Pricing</div>
+            <div>Releases</div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <div class="text-lead2 font-bold mb-1">Product</div>
+            <div>Overview</div>
+            <div>Features</div>
+            <div>Tutorials</div>
+            <div>Pricing</div>
+            <div>Releases</div>
+          </div>
+          <div
+            class="sm:col-span-2 md:col-span-4 relative flex justify-center mt-14"
+          >
+            <img src="./images/ico.png" alt="" class="px-14 bg-black z-10" />
+            <hr
+              class="w-full h-0.5 bg-white absolute top-1/2 -translate-y-1/2"
+            />
+          </div>
+          <div class="sm:col-span-2 md:col-span-4 text-center">
+            © 2020 Landify UI Kit. All rights reserved.
+          </div>
+        </div>
+      </div>
+      <div class="bg-black w-full text-white py-16 flex justify-center">
+        <div class="container grid sm:grid-cols-2 md:grid-cols-4 gap-7">
+          <div class="flex flex-col gap-3">
+            <div class="text-lead2 font-bold mb-1">Product</div>
+            <div class="wow animate__animated animate__slideInLeft">
+              Overview
+            </div>
+            <div class="wow animate__animated animate__slideInLeft">
+              Features
+            </div>
+            <div class="wow animate__animated animate__slideInLeft">
+              Tutorials
+            </div>
+            <div class="wow animate__animated animate__slideInLeft">
+              Pricing
+            </div>
+            <div class="wow animate__animated animate__slideInLeft">
+              Releases
+            </div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <div class="text-lead2 font-bold mb-1">Product</div>
+            <div>Overview</div>
+            <div>Features</div>
+            <div>Tutorials</div>
+            <div>Pricing</div>
+            <div>Releases</div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <div class="text-lead2 font-bold mb-1">Product</div>
+            <div>Overview</div>
+            <div>Features</div>
+            <div>Tutorials</div>
+            <div>Pricing</div>
+            <div>Releases</div>
+          </div>
+          <div class="flex flex-col gap-3">
+            <div class="text-lead2 font-bold mb-1">Product</div>
+            <div>Overview</div>
+            <div>Features</div>
+            <div>Tutorials</div>
+            <div>Pricing</div>
+            <div>Releases</div>
+          </div>
+          <div
+            class="sm:col-span-2 md:col-span-4 relative flex justify-center mt-14"
+          >
+            <img
+              src="./images/ico.png"
+              alt=""
+              class="px-14 bg-black z-10 wow animate__animated animate__jello"
+            />
+            <hr
+              class="w-full h-0.5 bg-white absolute top-1/2 -translate-y-1/2"
+            />
+          </div>
+          <div class="sm:col-span-2 md:col-span-4 text-center">
+            © 2020 Landify UI Kit. All rights reserved.
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
